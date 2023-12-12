@@ -1,0 +1,122 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    background-color: #11302a;
+    padding: 2%;
+    color: #dac4d0; 
+    font-size: xx-large;
+}
+
+.title {
+    padding: 5%;
+    background-color: #8f5774;
+}
+
+.instructions {
+    text-align: center;
+    background-color: #036264;
+    padding: 2.5%;
+    color:#dac4d0;
+}
+
+.gridContainer {
+    display:grid;
+    grid-template-columns: [col-start] 2fr [line-1] 2fr [line-2]  2fr[col-end];
+    grid-template-rows: [row-start] 1fr [line-1] 1fr [line-2] 1fr [line-3] 1fr [row-end];
+    background-color: #dac4d0;
+    justify-items: center;
+    align-content: center;
+    padding:2%;
+    row-gap: 10px;
+    column-gap: 20px;
+}
+
+.button {
+    font-size: larger;
+    border:none;
+    background-color: #11302a;
+    color: #e0829d;
+    padding: 20px;
+}
+
+.dis {
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+ 
+}
+.temp {
+    grid-column: 2/3;
+    grid-row:1/2;
+
+}
+
+
+.weight {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#calculateDist {
+    grid-row: 4/5;
+    grid-column: 2/3;
+    text-align: center;
+}
+
+#calculateTemp {
+    grid-row: 4/5;
+    grid-column: 2/3;
+    text-align: center;
+    display:none;
+}
+
+#calculateWeight {
+    grid-row: 4/5;
+    grid-column: 2/3;
+    text-align: center;
+    display:none;
+}
+
+.dropdownDistIn {
+    grid-row: 2/3;
+    grid-column:1/4;
+}
+
+.dropdownDistOut {
+    grid-row:3/4;
+    grid-column: 1/4;
+}
+
+.dropdownTempIn {
+    grid-row: 2/3;
+    grid-column:1/4;
+    display:none;
+
+}
+
+.dropdownTempOut {
+    grid-row:3/4;
+    grid-column: 1/4;
+    display:none;
+    text-align: center;
+
+}
+
+.dropdownWeightIn {
+    grid-row: 2/3;
+    grid-column:1/4;
+    display:none;
+
+}
+
+.dropdownWeightOut {
+    grid-row:3/4;
+    grid-column: 1/4;
+    display:none;
+    text-align: center;
+
+}
+

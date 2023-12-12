@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/properties.css"></link>
+    <script src="js/properties.js"></script>
+    <title<ConversionCalculator</title></ConversionCalculator>
+</head>
+<body>
+<div class="title">
+<h1>Measurement Converter</h1>
+</div>
+</div>
+
+<div class="instructions">
+    <h3>
+        Choose type of measurement:
+    </h3>
+</div>
+
+<div class="gridContainer">
+            <div id = "dis">
+            <button type="button" class="button" onclick = "showDist()">Distance</button>
+            </div>
+            <div id = "temp">
+            <button type="button" class="button" onclick="showTemp()">Temperature</button>
+            </div>
+            <div id = "weight">
+            <button type="button" class="button" onclick="showWeight()">Weight</button>
+            </div>
+
+                <div class = "dropdownDistIn" id="dropdownDistIn">
+                    <label for="distInVal">Choose original unit of measurement:
+                        <input type="number" id="distInVal">
+                    </label> 
+                    
+                    <input type="radio" value="meters"  name = "distIn" >Meters</option> 
+                    <input type="radio" value="feet" name = "distIn" >Feet</option> 
+                    <input type="radio" value="kilometers" name = "distIn" >Kilometers</option> 
+                    <input type="radio" value="miles" name = "distIn" >Miles</option> 
+                </div>
+              
+
+                <div class = "dropdownDistOut" id="dropdownDistOut">
+                <p>Choose unit of measurement to convert to:</p> 
+                    <input type="radio" name="distOut" value="meters">Meters</option> 
+                    <input type="radio" name="distOut" value="feet">Feet</option> 
+                    <input type="radio" name="distOut" value="kilometers">Kilometers</option> 
+                    <input type="radio" name="distOut" value="miles">Miles</option> 
+                
+                </div>
+
+            <br>
+
+                <div class = "dropdownTempIn" id="dropdownTempIn">
+                    <label for="TempInVal">Choose original unit of measurement:
+                        <input type="number" id="tempInVal">
+                    </label> 
+
+                    <input type="radio" value="cel"  name = "tempIn" >Celsius</option> 
+                    <input type="radio" value="fah" name = "tempIn" >Fahrenheit</option> 
+                </div>
+              
+
+                <div class = "dropdownTempOut" id="dropdownTempOut">
+                <p>Choose unit of measurement to convert to:</p> 
+                    <input type="radio" name="tempOut" value="fah">Fahrenheit</option> 
+                    <input type="radio" name="tempOut" value="cel">Celsius</option> 
+                
+                </div>
+
+                <div class = "dropdownWeightIn" id="dropdownWeightIn">
+                    <label for="weightInVal">Choose original unit of measurement:
+                        <input type="number" id="weightInVal">
+                    </label> 
+                    
+                    <input type="radio" value="kilog"  name = "weightIn" >Kilograms</option> 
+                    <input type="radio" value="pounds" name = "weightIn" >Pounds</option> 
+                    <input type="radio" value="grams" name = "weightIn" >Grams</option> 
+                    <input type="radio" value="ounces" name = "weightIn" >Ounces</option> 
+                </div>
+              
+
+                <div class = "dropdownWeightOut" id="dropdownWeightOut">
+                <p>Choose unit of measurement to convert to:</p> 
+                    <input type="radio" name="weightOut" value="kilog">Kilograms</option> 
+                    <input type="radio" name="weightOut" value="pounds">Pounds</option> 
+                    <input type="radio" name="weightOut" value="grams">Grams</option> 
+                    <input type="radio" name="weightOut" value="ounces">Ounces</option> 
+                
+                </div>
+
+
+
+
+
+
+            
+
+             <div class="calculate" id="calculateDist">
+                <p>Result:</p>
+                <br>
+                <span id ="resultDist"></span>
+                <br>
+                <button type="button" onclick="calculateDist()" class="button">Calculate</button>
+            </div>
+            <div class="calculate" id="calculateTemp">
+                <p>Result:</p>
+                <br>
+                <span id ="resultTemp"></span>
+                <br>
+                <button type="button" onclick="calculateTemp()" class="button">Calculate</button>
+            </div>
+            <div class="calculate" id="calculateWeight">
+                <p>Result:</p>
+                <br>
+                <span id ="resultWeight"></span>
+                <br>
+                <button type="button" onclick="calculateWeight()" class="button">Calculate</button>
+            </div>
+
+</div>
+</div>
+
+    
+</body>
+
+</html>
